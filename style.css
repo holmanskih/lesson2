@@ -1,0 +1,37 @@
+/* применение ко всем элементам */
+* {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* имя тега */
+h1 {
+    color: red;
+}
+
+/* имя класса */
+.heading {
+    /* color: blue; */
+}
+
+.center-cnt {
+    /* выравнивание текста по центру */
+    text-align: center;
+    color: grey;
+}
+
+.nav-list {
+    /* делаем flex дисплей для внутренних 
+    элементов списка */
+    display: flex;
+
+    /* отображаем и в ряд(row) */
+    flex-direction: row;
+}

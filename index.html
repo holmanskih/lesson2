@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,35 +10,72 @@
 <body>
     <!-- хедер - шапка сайта -->
     <header class="header">
-        <!-- а - за логотип сайта -->
-        <a href="/">
-            <img src="./img/logo.png" alt="Logo" class="logo">
-        </a>
+        <div class="section" style="display: flex">
+            <!-- а - за логотип сайта -->
+            <a href="/">
+                <img src="./img/logo.png" alt="Logo" class="logo">
+            </a>
 
-        <!-- отступ внутри -->
-        <div class="empty-cnt"></div>
+            <!-- отступ внутри -->
+            <div class="empty-cnt"></div>
 
-        <!-- nav - навигация по сайту -->
-        <nav>
-            <ul class='nav-list'>
-                <li>
-                    <a href="">Item 1</a>
-                </li>
-                <li>
-                    <a href="">Item 2</a>
-                </li>
-                <li>
-                    <a href="">Item 3</a>
-                </li>
-            </ul>
-        </nav>
+            <!-- nav - навигация по сайту -->
+            <nav class="navbar">
+                <ul class='nav-list'>
+                    <li>
+                        <a href="" class="navbar-link">Item 1</a>
+                    </li>
+                    <li>
+                        <a href="" class="navbar-link">Item 2</a>
+                    </li>
+                    <li>
+                        <a href="" class="navbar-link">Item 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class='center-cnt'>
-        <h1 class='heading'>Apple</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quibusdam maiores nemo error obcaecati nisi! Deserunt voluptate, illum in nam ipsa rem sit cumque magni earum ratione perspiciatis culpa!</p>
-        <button class='btn'>Это кнопка</button>
-    </div>
-    <h1>Orange</h1>
-    <a href="">link</a>
+    <!-- содержит все элементы сайта -->
+    <main>
+        <section class="section">
+            <div class='center-cnt'>
+                <h1 class='heading'>Apple</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quibusdam maiores nemo
+                    error obcaecati nisi! Deserunt voluptate, illum in nam ipsa rem sit cumque magni earum ratione
+                    perspiciatis culpa!</p>
+                <button class='btn'>Это кнопка</button>
+            </div>
+            <div class='style-cnt'>
+                <div class='style-cnt typography'>
+                    <a href="">This is a link</a>
+                    <p>This is paragraph</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section img-section">
+            <div class="text-cnt-right">
+                <h1 class='heading'>Apple</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perferendis quibusdam maiores nemo
+                        error obcaecati nisi! Deserunt voluptate, illum in nam ipsa rem sit cumque magni earum ratione
+                        perspiciatis culpa!
+                </p>
+                <div>
+                    <button>Text</button>
+                </div>
+            </div>
+            <div class="img-cnt"></div>
+        </section>
+
+        <!-- секции мы можем показывать двумя способами -->
+        <section></section>
+
+        <div></div>
+
+    </main>
+    <footer>
+        <!-- секции футера разбиты на div/ul/ul+nav -->
+    </footer>
 </body>
+
 </html>
